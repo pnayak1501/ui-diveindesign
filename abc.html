@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defeat The Coronavirus</title>
+    
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <style>
+       * {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    font-size: 1.3em;
+    background-color: lightgreen;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hits {
+    padding: 25px;
+    font-size: 1.3em;
+}
+
+#theRona {
+    width: 200px;
+    height: 200px;
+    cursor: url('./images/syringe.png'), auto;
+}
+#one{
+    font-size: 200%;
+}
+   </style>
+</head>
+
+
+<body>
+    <header>
+        <div>Defeat The Coronavirus<br><b>Persistence is all you need!!</b></div>
+    </header>
+
+    <div class="container">
+        <p id="one">Let's get started</p>
+        <div id="hits">Hit Count: 0</div>
+        <a target="_blank" id="successText" href="https://www.mygov.in/covid-19"></a>
+
+        <img id="theRona" src="./images/coronavirus.png" alt="">
+      
+
+    </div>
+    <script>
+     $(document).ready(function () {
+    var hitCount = 0;
+
+    $("#theRona").click(function () {
+        hitCount++;
+        $("#hits").text("Hit Count: " + hitCount);
+
+        switch (hitCount) {
+            case 5:
+                changeImgSize(150);
+                break;
+            case 10:
+                changeImgSize(100);
+                break;
+            case 15:
+                changeImgSize(50);
+                break;
+            case 20:
+                changeImgSize(0);
+                $("#successText").text("Congratulations, You did a great job!For more info on how to help others, click here");
+                break;
+            default:
+                break;
+
+        }
+    });
+
+    function changeImgSize(size) {
+        $("#theRona").width(size);
+        $("#theRona").height(size);
+
+
+    }
+
+});
+    </script>
+
+</body>
+
+</html>

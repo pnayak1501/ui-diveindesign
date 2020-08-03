@@ -1,0 +1,35 @@
+
+
+main{
+    background: radial-gradient(#01060a,#034f84);
+    overflow-x: hidden;
+}
+
+.covid{
+    color: white;
+    text-align: center;
+}
+
+.track{
+    color:#13a5e4;
+    text-align: center;
+}
+
+.rea{
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+
+.name{
+    color:white;
+}
+
+footer{
+    background-color: black;
+}
+
+footer > h6{
+    color: white; 
+    text-align: center;    
+}
