@@ -1,3 +1,3 @@
 # ui-diveindesign
 
-A coronavirus website designed using HTML,CSS,Javascript,Bootstrap4,Jquery.
+A coronavirus (COVID-19) website designed using HTML,CSS,Javascript,Bootstrap4,Jquery.
